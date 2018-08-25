@@ -10,7 +10,7 @@ for i in range(N):
     row = list(out[i])
     for j in range(N):
         if row[j] == 1:
-            open_sites.append(str(i) + " " + str(j) + "\n")
+            open_sites.append(str(i+1) + " " + str(j+1) + "\n")
 
 shuffle(open_sites)
 with open("sheebu" + str(N) + ".txt",'w',encoding = 'utf-8') as f:
